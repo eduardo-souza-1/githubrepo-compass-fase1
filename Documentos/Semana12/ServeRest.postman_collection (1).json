@@ -1,0 +1,485 @@
+{
+  "info": {
+    "_postman_id": "7259e1c5-50bf-49a2-b397-b178f2f14488",
+    "name": "ServeRest",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51826199",
+    "_collection_link": "https://go.postman.co/collection/51826199-7259e1c5-50bf-49a2-b397-b178f2f14488?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "/usuarios",
+      "item": [
+        {
+          "name": "Buscar usuário por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://compassuol.serverest.dev/usuarios/kTInaOMutyUYq3Q1",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "usuarios",
+                "kTInaOMutyUYq3Q1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Excluir usuário",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://compassuol.serverest.dev/usuarios/kTInaOMutyUYq3Q1",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "usuarios",
+                "kTInaOMutyUYq3Q1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar usuário cadastrado",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://compassuol.serverest.dev/usuarios?nome=fulano",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "usuarios"
+              ],
+              "query": [
+                {
+                  "key": "nome",
+                  "value": "fulano"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Cadastrar usuário",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nome\": \"Fulano da Silva\",\r\n  \"email\": \"josefino@compass.uol\",\r\n  \"password\": \"teste\",\r\n  \"administrador\": \"true\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://compassuol.serverest.dev/usuarios",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "usuarios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Editar usuário",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "https://compassuol.serverest.dev/usuarios/kTInaOMutyUYq3QP",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "usuarios",
+                "kTInaOMutyUYq3QP"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "/produtos",
+      "item": [
+        {
+          "name": "Cadastrar produto",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFhYWFhYWFhYWFhYWFhYWFhYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNzcwNzcyNjkxLCJleHAiOjE3NzA3NzMyOTF9.EgVymUh82jXoIchQxZp8b9Qd85wnsoExbeOZ4Q42CLM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nome\": \"aaaaaa\",\r\n  \"preco\": 999999,\r\n  \"descricao\": \" \",\r\n  \"quantidade\": \"1\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://compassuol.serverest.dev/produtos",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "produtos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar produtos cadastrados",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://compassuol.serverest.dev/produtos?nome=\n",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "produtos"
+              ],
+              "query": [
+                {
+                  "key": "nome",
+                  "value": "\n"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Editar produto",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Impvc2VmaW5vMTIzQGNvbXBhc3MudW9sIiwicGFzc3dvcmQiOiJ0ZXN0ZSIsImlhdCI6MTc3MDc2NjI4NywiZXhwIjoxNzcwNzY2ODg3fQ.mKijWEx4k6xCS_ns0Gagc4cEEnHpSRh7Mwp8jmOpiG0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nome\": \" \",\r\n  \"preco\": 470,\r\n  \"descricao\": \" \",\r\n  \"quantidade\": 381\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://compassuol.serverest.dev/produtos/20FGDJKxL5mCwJNB",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "produtos",
+                "20FGDJKxL5mCwJNB"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Excluir produto",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFhYWFhYWFhYWFhYWFhYWFhYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNzcwNzY5NTUwLCJleHAiOjE3NzA3NzAxNTB9.DbeIDqFG0JnBbKsT0m4g_1FQDoSFpQgtKnGPBbtB-jA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://compassuol.serverest.dev/produtos/UaJeT1SnouhyLUnA",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "produtos",
+                "UaJeT1SnouhyLUnA"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar produto por ID",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFhYWFhYWFhYWFhYWFhYWFhYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNzcwNzY5NTUwLCJleHAiOjE3NzA3NzAxNTB9.DbeIDqFG0JnBbKsT0m4g_1FQDoSFpQgtKnGPBbtB-jA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://compassuol.serverest.dev/produtos/ehfw6UPGuYDspsuC",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "produtos",
+                "ehfw6UPGuYDspsuC"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "/login",
+      "item": [
+        {
+          "name": "Realizar Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"a@aaaaaaaaaaaaaaaaaaa.com\",\r\n  \"password\": \"teste\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://compassuol.serverest.dev/login",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "/carrinhos",
+      "item": [
+        {
+          "name": "Cadastrar carrinho",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFhYWFhYWFhYWFhYWFhYWFhLmNvbSIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3NzA5MzA1MTgsImV4cCI6MTc3MDkzMTExOH0.BpoWbMiVZs2GNZo-nK5hMKkhyz4v4cvC-d4MXCUkU70",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"produtos\": [\r\n    {\r\n      \"idProduto\": \"\"xAAVKRczGjFjuqeB\",\r\n      \"quantidade\": \"1\"\r\n    },\r\n    {\r\n      \"idProduto\": \"5KL96OxUrpARMCDJ\",\r\n      \"quantidade\": \"1\"\r\n    }\r\n  ]\r\n}"
+            },
+            "url": {
+              "raw": "https://compassuol.serverest.dev/carrinhos",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "carrinhos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar carrinho por ID",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "Listar carrinhos cadastrados",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://compassuol.serverest.dev/carrinhos?precoTotal=1300&quantidadeTotal=2",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "carrinhos"
+              ],
+              "query": [
+                {
+                  "key": "precoTotal",
+                  "value": "1300"
+                },
+                {
+                  "key": "quantidadeTotal",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Excluir carrinho e retornar produtos pra estoque",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFhYWFhYWFhYWFhYWFhYWFhLmNvbSIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3NzA5MzM2NTcsImV4cCI6MTc3MDkzNDI1N30.XggKhKEGOvtw7nTykohMTjXVznBaen6OxhozVeTZyKM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://compassuol.serverest.dev/carrinhos/concluir-compra",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "carrinhos",
+                "concluir-compra"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Excluir compra",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYWFhYWFhYWFhYWFhYWFhYWFhLmNvbSIsInBhc3N3b3JkIjoidGVzdGUiLCJpYXQiOjE3NzA5MzM2NTcsImV4cCI6MTc3MDkzNDI1N30.XggKhKEGOvtw7nTykohMTjXVznBaen6OxhozVeTZyKM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://compassuol.serverest.dev/carrinhos/cancelar-compra",
+              "protocol": "https",
+              "host": [
+                "compassuol",
+                "serverest",
+                "dev"
+              ],
+              "path": [
+                "carrinhos",
+                "cancelar-compra"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "id_usuario_temp",
+      "value": ""
+    }
+  ]
+}
