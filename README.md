@@ -21,7 +21,6 @@ Cada Sprint possui seus respectivos arquivos organizados em subpastas.
 
 O repositório utiliza branches para representar a evolução das entregas ao longo das Sprints.
 
-A branch `main` contém a versão consolidada dos documentos.
 
 ## Autor
 
