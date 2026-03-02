@@ -1,10 +1,12 @@
-# Repositório de Documentação – fase 2
+# Repositório de Documentação – fase 1 & 2
 
 ## Sobre
 
 Este repositório foi criado para armazenar e versionar os principais documentos desenvolvidos ao longo das Sprints do PB.
 
 O objetivo é manter organizados os artefatos produzidos durante as atividades, aplicando conceitos básicos de versionamento com Git.
+
+E posteriormente servir de repositório para as atividades da Fase 2.
 
 ## Conteúdo
 
